@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://gogs.selab.ca/issues -->
+<html lang="en"><head data-suburl=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<meta name="author" content="Gogs">
+		<meta name="description" content="Gogs is a painless self-hosted Git service">
+		<meta name="keywords" content="go, git, self-hosted, gogs">
+	
+	<meta name="referrer" content="no-referrer">
+	<meta name="_csrf" content="TgZ0yFzCU_LlBkZRPNQfrpRqf4o6MTU2OTcyMDAwMDMyMDk2MDc2Ng==">
+	<meta name="_suburl" content="">
+
+	
+	
+		<meta property="og:url" content="https://selab.ca/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Social Entrepreneurship Lab">
+		<meta property="og:description" content="Gogs is a painless self-hosted Git service.">
+		<meta property="og:image" content="https://selab.ca/img/gogs-lg.png">
+		<meta property="og:site_name" content="Gogs">
+	
+
+	<link rel="shortcut icon" href="./Issues - Social Entrepreneurship Lab_files/favicon.png">
+
+	<script src="./Issues - Social Entrepreneurship Lab_files/jquery-1.11.3.min.js.download"></script>
+	<script src="./Issues - Social Entrepreneurship Lab_files/jquery.are-you-sure.js.download"></script>
+	<link rel="stylesheet" href="./Issues - Social Entrepreneurship Lab_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./Issues - Social Entrepreneurship Lab_files/octicons.min.css">
+
+	
+	
+
+	
+
+	
+	<link rel="stylesheet" href="semantic-2.3.1.min.css">
+	<link rel="stylesheet" href="gogs.css">
+	<link rel="stylesheet" href="selab.css">
+	<noscript>
+		<style>
+			.dropdown:hover > .menu { display: block; }
+			.ui.secondary.menu .dropdown.item > .menu { margin-top: 0; }
+		 </style>
+	</noscript>
+
+	
+	<script src="./Issues - Social Entrepreneurship Lab_files/semantic-2.3.1.min.js.download"></script>
+	<script src="./Issues - Social Entrepreneurship Lab_files/gogs.js.download"></script>
+	<script src="./Issues - Social Entrepreneurship Lab_files/selab.js.download"></script>
+
+	<title>Issues - Social Entrepreneurship Lab</title>
+
+	<meta name="theme-color" content="#ff5343">
+
+	
+</head>
+<body>
+	<div class="full height">
+		<noscript>This website works better with JavaScript</noscript>
+
+		
+			<div class="following bar light">
+				<div class="ui container">
+					<div class="ui grid">
+						<div class="column">
+							<div class="ui top secondary menu">
+								<a class="item brand" href="https://gogs.selab.ca/">
+									<img alt="sites icon" class="ui mini image" src="favicon.png">
+								</a>
+
+								
+									<a class="item" href="https://gogs.selab.ca/">Dashboard</a>
+									<a class="item active" href="https://gogs.selab.ca/issues">Issues</a>
+									<a class="item" href="https://gogs.selab.ca/pulls">Pull Requests</a>
+								
+
+								<a class="item" href="https://gogs.selab.ca/explore/repos">Explore</a>
+								
+
+								
+									<div class="right menu">
+										<div class="ui dropdown head link jump item poping up" data-content="Create..." data-variation="tiny inverted" tabindex="0">
+											<span class="text">
+												<i class="octicon octicon-plus"><span class="sr-only">Create...</span></i>
+												<i class="octicon octicon-triangle-down"></i>
+											</span>
+											<div class="menu" tabindex="-1">
+												<a class="item" href="https://gogs.selab.ca/repo/create">
+													<i class="octicon octicon-plus"></i> New Repository
+												</a>
+												<a class="item" href="https://gogs.selab.ca/repo/migrate">
+													<i class="octicon octicon-repo-clone"></i> New Migration
+												</a>
+												
+												<a class="item" href="https://gogs.selab.ca/org/create">
+													<i class="octicon octicon-organization"></i> New Organisation
+												</a>
+												
+											</div>
+										</div>
+
+										<div class="ui dropdown head link jump item poping up" data-content="User profile and more" data-variation="tiny inverted" tabindex="0">
+											<span class="text avatar">
+												<img alt="" class="ui small rounded image" src="e73e9f654040f0f2ee6377aa145b625f">
+												<span class="sr-only">User profile and more</span>
+												<i class="octicon octicon-triangle-down" tabindex="-1"></i>
+											</span>
+											<div class="menu" tabindex="-1">
+												<div class="ui header">
+													Signed in as <strong>Garanox</strong>
+												</div>
+
+												<div class="divider"></div>
+												<a class="item" href="https://gogs.selab.ca/Garanox">
+													<i class="octicon octicon-person"></i> Your Profile
+												</a>
+												<a class=" item" href="https://gogs.selab.ca/user/settings">
+													<i class="octicon octicon-settings"></i> Your Settings
+												</a>
+												<a class="item" target="_blank" rel="noopener noreferrer" href="https://gogs.io/docs">
+													<i class="octicon octicon-question"></i> Help
+												</a>
+												
+
+												<div class="divider"></div>
+
+												<form id="logout-form" class="item" action="https://gogs.selab.ca/user/logout" method="POST">
+													<input type="hidden" name="_csrf" value="TgZ0yFzCU_LlBkZRPNQfrpRqf4o6MTU2OTcyMDAwMDMyMDk2MDc2Ng==">
+													<div class="submit-button" data-form="#logout-form">
+														<i class="octicon octicon-sign-out"></i> Sign Out
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+		
+
+
+<div class="dashboard issues">
+	<div class="ui container">
+	<div class="ui floating dropdown link jump" tabindex="0">
+		<span class="text">
+			<img alt="" class="ui avatar image" src="e73e9f654040f0f2ee6377aa145b625f">
+			Garanox
+			<i class="dropdown icon"></i>
+		</span>
+		<div class="context user overflow menu" tabindex="-1">
+			<div class="ui header">
+				Switch Dashboard Context
+			</div>
+			<div class="items">
+				<a class="active selected item" href="https://gogs.selab.ca/issues">
+					<img alt="User Image" class="ui avatar image" src="e73e9f654040f0f2ee6377aa145b625f">
+					Garanox
+				</a>
+				
+			</div>
+			<a class="item" href="https://gogs.selab.ca/org/create">
+				<i class="octicon octicon-plus"></i>&nbsp;&nbsp;&nbsp;New Organisation
+			</a>
+		</div>
+	</div>
+
+	
+	<div class="ui divider"></div>
+</div>
+
+	<div class="ui container">
+		<div class="ui grid">
+			<div class="four wide column">
+				<div class="ui secondary vertical filter menu">
+					<a class="ui basic blue button item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=&amp;state=open">
+						In your repositories
+						<strong class="ui right">0</strong>
+					</a>
+					
+						<a class=" item" href="https://gogs.selab.ca/issues?type=assigned&amp;repo=0&amp;sort=&amp;state=open">
+							Assigned to you
+							<strong class="ui right">0</strong>
+						</a>
+						<a class=" item" href="https://gogs.selab.ca/issues?type=created_by&amp;repo=0&amp;sort=&amp;state=open">
+							Created by you
+							<strong class="ui right">0</strong>
+						</a>
+					
+					<div class="ui divider"></div>
+					
+				</div>
+			</div>
+			<div class="twelve wide column content">
+				<div class="ui tiny basic status buttons">
+					<a class="ui green active basic button" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=&amp;state=open">
+						<i class="octicon octicon-issue-opened"></i>
+						0 Open
+					</a>
+					<a class="ui  basic button" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=&amp;state=closed">
+						<i class="octicon octicon-issue-closed"></i>
+						0 Closed
+					</a>
+				</div>
+				<div class="ui right floated secondary filter menu">
+					
+					<div class="ui dropdown type jump item" tabindex="0">
+						<span class="text">
+							Sort
+							<i class="dropdown icon"></i>
+						</span>
+						<div class="menu" tabindex="-1">
+							<a class="active item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=latest&amp;state=open">Newest</a>
+							<a class=" item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=oldest&amp;state=open">Oldest</a>
+							<a class=" item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=recentupdate&amp;state=open">Recently updated</a>
+							<a class=" item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=leastupdate&amp;state=open">Least recently updated</a>
+							<a class=" item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=mostcomment&amp;state=open">Most commented</a>
+							<a class=" item" href="https://gogs.selab.ca/issues?type=your_repositories&amp;repo=0&amp;sort=leastcomment&amp;state=open">Least commented</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="issue list">
+					
+
+					
+						
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+	<footer>
+		<div class="ui container">
+			<div class="ui left">
+				© 2019 Gogs Version: 0.11.91.0811 Page: <strong>9ms</strong> Template: <strong>0ms</strong>
+			</div>
+			<div class="ui right links">
+				
+				<div class="ui language bottom floating slide up dropdown link item" tabindex="0">
+					<i class="world icon"></i>
+					<div class="text">English (United Kingdom)</div>
+					<div class="menu" tabindex="-1">
+						
+							<a class="item active selected" href="https://gogs.selab.ca/issues#">English (United Kingdom)</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=en-US">English</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=zh-CN">简体中文</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=zh-HK">繁體中文（香港）</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=zh-TW">繁體中文（臺灣）</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=de-DE">Deutsch</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=fr-FR">français</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=nl-NL">Nederlands</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=lv-LV">latviešu</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=ru-RU">русский</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=ja-JP">日本語</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=es-ES">español</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=pt-BR">português do Brasil</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=pl-PL">polski</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=bg-BG">български</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=it-IT">italiano</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=fi-FI">suomi</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=tr-TR">Türkçe</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=cs-CZ">čeština</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=sr-SP">српски</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=sv-SE">svenska</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=ko-KR">한국어</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=gl-ES">galego</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=uk-UA">українська</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=hu-HU">Magyar</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=sk-SK">Slovenčina</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=id-ID">Indonesian</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=fa-IR">Persian</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=vi-VN">Vietnamese</a>
+						
+							<a class="item " href="https://gogs.selab.ca/issues?lang=pt-PT">Português</a>
+						
+					</div>
+				</div>
+				<a href="https://gogs.selab.ca/assets/librejs/librejs.html" style="display:none" data-jslicense="1">Javascript Licenses</a>
+				<a target="_blank" rel="noopener noreferrer" href="https://gogs.io/">Website</a>
+				<span class="version">Go1.13</span>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+<script src="./Issues - Social Entrepreneurship Lab_files/emojify-1.1.0.min.js.download"></script>
+<script src="./Issues - Social Entrepreneurship Lab_files/clipboard-1.5.9.min.js.download"></script>
+
+
+
+
+</body></html>
