@@ -315,6 +315,7 @@ code.wrap {
   font-weight: 700 !important;
 }
 footer {
+position: sticky;
   margin-top: 54px !important;
   height: 40px;
   background-color: white;
